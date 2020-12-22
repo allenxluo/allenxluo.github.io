@@ -1,0 +1,4 @@
+baseURL = "https://allenxluo.github.io/"
+languageCode = "en-us"
+title = "My Personal Website"
+theme = "paper"
