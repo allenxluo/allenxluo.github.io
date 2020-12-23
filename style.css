@@ -1,0 +1,19 @@
+.container {
+    width: 500px;
+    float: left;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hello {
+    font-weight:lighter
+}
+
+a {
+    text-decoration: none;
+}
+
+
