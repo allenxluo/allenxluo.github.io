@@ -38,12 +38,11 @@ body {
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 33vw;
+    margin: auto;
     margin-bottom: 50vh;
     position: relative;
+    width: fit-content;
+    height: fit-content;
 }
 
 .about-text {
@@ -63,7 +62,7 @@ body {
     color: #202020;
     font-size: 40px;
     font-family: 'Courier New';
-    margin: 0;
+    margin: auto;
 }
 
 a {
