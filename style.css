@@ -1,83 +1,130 @@
-.container {
-    width: 500px;
-    float: left;
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    overflow-x: hidden;
 }
 
-img {
+.vl {
+    margin-left: 35px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: dodgerblue;
+    height: 100px;
+}
+
+.links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.important-text {
+    color: dodgerblue;
+}
+
+.topnav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 33vw;
+    margin-bottom: 50vh;
     position: relative;
-    top: -15px;
 }
 
-.name {
-    font-size: 40px;
-    font-weight: bold;
+.about-text {
+    max-width: 750px;
+}
+
+.about-title {
     font-family: 'Courier New';
-    margin-top: 0;
+    font-size: 40px;
 }
 
 .text {
     font-family: 'Courier New';
 }
 
-.hello {
-    font-weight: bold;
-    color: silver;
+.intro {
+    color: #202020;
+    font-size: 40px;
     font-family: 'Courier New';
     margin: 0;
 }
 
 a {
+    position: relative;
     text-decoration: none;
     color: dodgerblue;
     font-family: 'Courier New';
 }
 
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+.info a:hover {
     color: dodgerblue;
 }
 
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-  
-.popup .popuptext::after {
+.info a::before {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-  
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: dodgerblue;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+.info a:hover::before {
+    transform: scaleX(1);
 }
 
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
 }
-  
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+
+ul {
+    list-style-type: none;
+}
+
+ul.info li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -30px;
+}
+
+ul.links li {
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+ul.links li:hover {
+    transform: translateY(-4px);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
    
 

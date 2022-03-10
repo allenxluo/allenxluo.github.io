@@ -1,45 +1,79 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width', initial-scale='1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <link href='style.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/109197fdf2.js" crossorigin="anonymous"></script>
     <title>Allen Luo</title>
   </head>
   <body>
-    <div class="position-absolute top-50 start-50 translate-middle">
-      <div class="d-flex align-items-center">
-        <div class="container-flex">
-          <div class="row">
-            <p class="hello">👋 Hello! My name is</p>
-            <p class="name">Allen Luo<span style="color: dodgerblue">.</span></p>
-          </div>
-          <div class="row">
-            <p class="text">I'm a third-year student at <a href="https://www.google.com/maps/place/University+of+California+Irvine/@33.6422641,-117.849126,14.75z/data=!4m5!3m4!1s0x80dcde0e2592bf91:0x79fbc5d0b6dab7ec!8m2!3d33.6404952!4d-117.8442962">UC Irvine</a> majoring in computer science.</p>
-          </div>
-          <div class="row">
-            <p class="text">Currently I'm in search for Summer 2022 internship opportunities. If interested you can 
-              <span class="popup" onclick="popUp()">contact me here
-                <span class="popuptext" id="myPopup">luoax@uci.edu</span>
-              </span>.</p>
-          </div>
-          <div class="row">
-            <ul class="nav justify-content-start">
-              <li class="nav-item">
-                <a class="nav-link" href="assets/resume.pdf">resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/allenxluo">github</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://www.linkedin.com/in/allenxluo">linkedin</a>
-                </li>
-            </ul>
-          </div>
+    <div class='topnav'>
+      <ul class='nav justify-content-start'>
+        <li>
+          <a href='#home' class='nav-link'>home</a>
+        </li>
+        <li>
+          <a href='#about' class='nav-link'>about</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div id='home' class='home'>
+        <div class='row'>
+          <p class='intro'>Hi! 👋  — My name is<br><span class='important-text'>Allen</span>, I'm a <span class='important-text'>student</span><br>👨🏻‍🎓 and <span class='important-text'>developer</span> 👨🏻‍💻.</p>
         </div>
-        <img src="assets/avatar.png" class="rounded-circle" width="350" height="350" >
+      </div>
+      <div id='about' class='about'>
+        <p class='about-title'>About</p>
+        <div class='about-text'>
+          <ul class='info'>
+            <li>
+              <p class='text'>third-year student at <a href='https://www.ics.uci.edu' target='_blank'>uc irvine</a> majoring in computer science</p>
+            </li>
+            <li>
+              <p class='text'>tech lead of the literacy project at <a href='https://ctc-uci.com' target='_blank'>commit the change</a></p>
+            </li>
+            <li>
+              <p class='text'>previous swe intern at <a href='https://www.linkedin.com/company/walmartglobaltech/' target='_blank'>walmart global tech</a> on the point of sale team</p>
+            </li>
+            <li>
+              <p class='text'>incoming swe intern at oracle on the <a href='https://www.oracle.com/cloud' target='_blank'>oci</a> team this summer</p>
+            </li>
+            <li>
+              <p class='text'>currently in search for fall/winter 2022 opportunities, <a href='mailto: luoax@uci.edu'>contact me here</a> if interested</p>
+            </li>
+          </ul>
+          <ul class='links'>
+            <li class='nav-item'>
+              <a class=' nav-link' href='assets/resume.pdf' target='_blank'>
+                <i class="fa-solid fa-file fa-lg"></i>
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' href='https://github.com/allenxluo' target='_blank'>
+                <i class="fa-brands fa-github fa-lg"></i>
+              </a>
+            </li>
+            <li class='nav-item'>
+                <a class='nav-link' href='https://www.linkedin.com/in/allenxluo' target='_blank'>
+                  <i class="fa-brands fa-linkedin fa-lg"></i>
+                </a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' href='https://www.instagram.com/allenxluo' target='_blank'>
+                <i class="fa-brands fa-instagram fa-lg"></i>
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' href='https://open.spotify.com/user/uvyhdydgd2bilsm405xgq8t58?si=1d459761723f47e5' target='_blank'>
+                <i class="fa-brands fa-spotify fa-lg"></i>
+              </a>
+            </li>
+            <div class='vl'></div>
+          </ul> 
+        </div>
       </div>
     </div>
   </body>
