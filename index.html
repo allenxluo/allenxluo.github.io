@@ -2,8 +2,8 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width', initial-scale='1'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href='style.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/109197fdf2.js" crossorigin="anonymous"></script>
     <title>Allen Luo</title>
@@ -11,18 +11,14 @@
   <body>
     <div class='topnav'>
       <ul class='nav justify-content-start'>
-        <li>
-          <a href='#home' class='nav-link'>home</a>
-        </li>
-        <li>
-          <a href='#about' class='nav-link'>about</a>
-        </li>
+        <a href='#home' class='nav-link'>home</a>
+        <a href='#about' class='nav-link'>about</a>
       </ul>
     </div>
     <div>
       <div id='home' class='home'>
-        <div class='row'>
-          <p class='intro'>Hi! 👋  — My name is<br><span class='important-text'>Allen</span>, I'm a <span class='important-text'>student</span><br>👨🏻‍🎓 and <span class='important-text'>developer</span> 👨🏻‍💻.</p>
+        <div class='intro-container'>
+          <p class='intro'>Hi! 👋  — My name is <span class='important-text'>Allen</span>, I'm a <span class='important-text'>student</span> 👨🏻‍🎓 and <span class='important-text'>developer</span> 👨🏻‍💻.</p>
         </div>
       </div>
       <div id='about' class='about'>
@@ -35,51 +31,43 @@
             <li>
               <p class='text'>previously</p>
             </li>
-            <ul>
-              <li>
-                <p class='text'>swe intern at oracle on the <a href='https://www.oracle.com/cloud' target='_blank'>oci</a> team</p>
-              </li>
-              <li>
-                <p class='text'>tech lead of the literacy project at <a href='https://ctc-uci.com' target='_blank'>commit the change</a></p>
-              </li>
-              <li>
-                <p class='text'>swe intern at <a href='https://www.linkedin.com/company/walmartglobaltech/' target='_blank'>walmart global tech</a> on the point of sale team</p>
-              </li>
-            </ul>
             <li>
-              <p class='text'>currently in search for new grad 2023 opportunities, <a href='mailto: luoax@uci.edu'>contact me here</a> if interested</p>
+              <ul>
+                <li>
+                  <p class='text'>swe intern at oracle on the <a href='https://www.oracle.com/cloud' target='_blank'>oci</a> team</p>
+                </li>
+                <li>
+                  <p class='text'>tech lead of the literacy project at <a href='https://ctc-uci.com' target='_blank'>commit the change</a></p>
+                </li>
+                <li>
+                  <p class='text'>swe intern at <a href='https://www.linkedin.com/company/walmartglobaltech/' target='_blank'>walmart global tech</a> on the point of sale team</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class='text'>currently in search for new grad 2023 opportunities, <a href='mailto:luoax@uci.edu'>contact me here</a> if interested</p>
             </li>
           </ul>
           <ul class='links'>
             <li class='nav-item'>
-              <a class=' nav-link' href='assets/resume.pdf' target='_blank'>
-                <i class="fa-solid fa-file fa-lg"></i>
+              <a title="resume" class=' nav-link' href='assets/resume.pdf' target='_blank'>
+                <em class="fa-solid fa-file fa-lg"></em>
               </a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='https://github.com/allenxluo' target='_blank'>
-                <i class="fa-brands fa-github fa-lg"></i>
+              <a title="github" class='nav-link' href='https://github.com/allenxluo' target='_blank'>
+                <em class="fa-brands fa-github fa-lg"></em>
               </a>
             </li>
             <li class='nav-item'>
-                <a class='nav-link' href='https://www.linkedin.com/in/allenxluo' target='_blank'>
-                  <i class="fa-brands fa-linkedin fa-lg"></i>
+                <a title="linkedin" class='nav-link' href='https://www.linkedin.com/in/allenxluo' target='_blank'>
+                  <em class="fa-brands fa-linkedin fa-lg"></em>
                 </a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='https://www.instagram.com/allenxluo' target='_blank'>
-                <i class="fa-brands fa-instagram fa-lg"></i>
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='https://open.spotify.com/user/uvyhdydgd2bilsm405xgq8t58?si=1d459761723f47e5' target='_blank'>
-                <i class="fa-brands fa-spotify fa-lg"></i>
-              </a>
-            </li>
-            <div class='vl'></div>
           </ul> 
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>

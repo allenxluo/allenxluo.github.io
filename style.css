@@ -14,9 +14,7 @@ body {
 }
 
 .links {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    display: flex;
 }
 
 .important-text {
@@ -27,17 +25,18 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 1;
 }
 
 .home {
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
     max-width: 100vw;
 }
 
 .about {
+    padding: 20px;
     margin: auto;
     margin-bottom: 50vh;
     position: relative;
@@ -56,6 +55,15 @@ body {
 
 .text {
     font-family: 'Courier New';
+}
+
+.intro-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 540px;
 }
 
 .intro {
